@@ -64,6 +64,6 @@ func translateWords(words []string) {
 		for _, ent := range result.Entries {
 			resultS += ent.Content
 		}
-		fmt.Printf("%s: %s\n", word, resultS)
+		fmt.Printf("%s: %s", word, resultS)
 	}
 }
