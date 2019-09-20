@@ -57,6 +57,7 @@ func translateWords(words []string) {
 		var result Results
 		if err := xml.Unmarshal(resultXml, &result); err != nil {
 			log.Println(err)
+			log.Printf("resp:\n%s\n", string(resultXml))
 			continue
 		}
 
