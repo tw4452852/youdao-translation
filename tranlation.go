@@ -61,12 +61,9 @@ func translateWords(words []string) {
 			continue
 		}
 
-		resultS := ""
-		for i, ent := range result.Entries {
-			if i != 0 {
-				resultS += " "
-			}
-			resultS += ent.Content
+		resultS := "\n"
+		for _, ent := range result.Entries {
+			resultS += ent.Content + "\n"
 		}
 		fmt.Printf("%s: %s", word, resultS)
 	}
